@@ -33,6 +33,7 @@ Nuotraukų albumas su aprašymais, komentarais, likes.
   * email
   * skype
   * isAdmin
+  * isOwner
   * photo 
 
 * Experience; belongs_to_user
