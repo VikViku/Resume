@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170628173118) do
+ActiveRecord::Schema.define(version: 20170630064503) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -145,6 +145,42 @@ ActiveRecord::Schema.define(version: 20170628173118) do
     t.index ["expire_date"], name: "django_session_de54fa62"
   end
 
+  create_table "educations", force: :cascade do |t|
+    t.string "university"
+    t.string "course"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_educations_on_user_id"
+  end
+
+  create_table "experiences", force: :cascade do |t|
+    t.string "workplace"
+    t.string "occupation"
+    t.text "desc"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_experiences_on_user_id"
+  end
+
+  create_table "interests", force: :cascade do |t|
+    t.string "title"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_interests_on_user_id"
+  end
+
+  create_table "languages", force: :cascade do |t|
+    t.string "name"
+    t.string "level"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_languages_on_user_id"
+  end
+
   create_table "menu_category", id: :serial, force: :cascade do |t|
     t.string "name", limit: 50, null: false
     t.boolean "active", null: false
@@ -195,6 +231,14 @@ ActiveRecord::Schema.define(version: 20170628173118) do
     t.index ["tree_id"], name: "menu_genre_656442a0"
   end
 
+  create_table "skills", force: :cascade do |t|
+    t.string "title"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_skills_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
@@ -202,6 +246,21 @@ ActiveRecord::Schema.define(version: 20170628173118) do
     t.text "desc"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "isOwner", default: false
   end
 
+  create_table "workshops", force: :cascade do |t|
+    t.string "title"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_workshops_on_user_id"
+  end
+
+  add_foreign_key "educations", "users"
+  add_foreign_key "experiences", "users"
+  add_foreign_key "interests", "users"
+  add_foreign_key "languages", "users"
+  add_foreign_key "skills", "users"
+  add_foreign_key "workshops", "users"
 end
