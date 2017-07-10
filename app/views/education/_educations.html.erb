@@ -1,0 +1,20 @@
+<section>
+
+	<div class="container-fluid">
+		<h1><%= t(:education) %></h1>
+		<ul class="timeline">
+			<% @educations.each do |uni| %>
+			<li class="<%= cycle("", "timeline-inverted") %>">
+				<div class="timeline-badge"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
+				<div class="timeline-panel">
+					<h4><%= uni.university %></h4>
+					<h5><%= uni.course %></h5>
+					<h4><small class="text-muted"><i class="glyphicon glyphicon-time"></i> DATA!!!</small></h4>
+			</li>
+			<% end %>
+			<li><div class="timeline-badge primary">Start</li>
+			</div>
+		</ul>
+	</div>
+
+</section>
