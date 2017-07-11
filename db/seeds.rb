@@ -10,6 +10,15 @@ def random_id
 	user = User.pluck(:id).sample
 end
 
+User.create(first_name: 'Testas',
+            last_name: 'testauskas',
+            email: 'admin@gmail.com',
+            desc: 'n/a',
+            title: 'n/a',
+            password: '123456',
+            password_confirmation: '123456'
+           )
+
 User.create([{first_name: "Viktorija",
 			last_name: "Šukvietytė",
 			title: Faker::Name.title,
@@ -17,11 +26,11 @@ User.create([{first_name: "Viktorija",
             {first_name: "Vardas",
 			last_name: "Pavarde",
 			title: Faker::Name.title,
-            desc: Faker::Lorem.paragraph}])	
+            desc: Faker::Lorem.paragraph}])
 
 
 
-3.times do 
+3.times do
 	Experience.create(workplace: Faker::Company.name,
 					occupation: Faker::Company.profession,
 					desc: Faker::Lorem.paragraph,
