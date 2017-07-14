@@ -30,10 +30,17 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem "font-awesome-rails"
+
 gem 'gentelella-rails'
 gem 'devise'
 gem 'pry'
+gem 'notifyjs_rails'
+gem 'sidekiq'
+gem 'redis-namespace'
 
+gem 'jquery-ui-rails'
+gem 'rails_admin', '~> 1.2'
+gem 'pry'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -43,6 +50,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+
 end
 
 group :development do

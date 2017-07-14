@@ -16,6 +16,7 @@ config/database.yml
 /coverage/
 /spec/tmp
 *.orig
+.env
 rerun.txt
 pickle-email-*.html
 

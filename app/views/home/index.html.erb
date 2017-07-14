@@ -1,92 +1,15 @@
-<header>
-	<div class="container-fluid">
-		<%= image_tag "foto.jpg", :alt => "mano foto", :class => "img-circle" %>
-		<h1>
-			<%= @owner.first_name %>
-			<%= @owner.last_name %>
-		</h1>
-		<h4><%= @owner.title %></h4>
-	</div>
-</header>
+<%= render "shared/header" %>
 
-<section>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-6">
-				<h1><%= t :about %>.</h1>
-				<p><%= @owner.desc %></p>
-			</div>
-			<div class="col-md-6">
-				<%= image_tag "about.JPG", :alt => "me in action", :class => "img-thumbnail", :width => 500 %>
-			</div>
-		</div>
-	</div>
+<%= render "user/about" %>
 
-</section>
+<%= render "education/educations" %>
 
-<section>
-	<h1><%= t :education %>.</h1>
-	<div class="container">
-		<ul class="timeline">
-			<% @educations.each do |uni| %>
-			<li class="<%= cycle("", "timeline-inverted") %>">
-				<div class="timeline-badge"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
-				<div class="timeline-panel">
-				    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> DATA!!!</small></p>
-					<h3><%= uni.university %></h3>
-					<h4><%= uni.course %></h4>
-				</div>
-			</li>
-			<% end %>
-			<li><div class="timeline-badge primary">Start</div></li>
-		</ul>
-	</div>
+<%= render "experience/experiences" %>
 
-</section>
+<%= render "skill/skills" %>
 
-<section>
-	<% @experiences.each do |exp| %>
-		<%= exp.workplace %>
-		<%= exp.occupation %>
-		<%= exp.desc %>
-	<% end %>
+<%= render "shared/wli" %>
 
+<%= render "contact/new", contact: @contact %>
 
-</section>
-
-<section>
-	<i class="fa fa-graduation-cap" aria-hidden="true"></i>
-	<% @workshops.each do |ws| %>
-	<%= ws.title %>
-	<% end %>
-
-</section>
-
-<section>
-
-	<% @languages.each do |lang| %>
-	<%= lang.name %>
-	<%= lang.level %>
-	<% end %>
-
-</section>
-
-<section>
-
-	<% @skills.each do |skill| %>
-	<%= skill.title %>
-	<% end %>
-
-</section>
-
-<section>
-
-	<% @interests.each do |hobby| %>
-	<%= hobby.title %>
-	<% end %>
-
-</section>
-
-<footer>
-	<p>	... </p>
-</footer>
+<%= render "shared/footer" %>
