@@ -61,16 +61,13 @@ config.action_mailer.delivery_method = :smtp
 
 
 config.action_mailer.smtp_settings = {
-address: "smtp.gmail.com",
-port: 587,
-authentication: :plain,
-domain: ENV["GMAIL_DOMAIN"],
-user_name: ENV["GMAIL_USERNAME"],
-password: ENV["GMAIL_PASSWORD"],
-# ssl: true,
-tls: true,
-enable_starttls_auto: true,
-# openssl_verify_mode: 'none'
+  address: "smtp.gmail.com",
+  port: 587,
+  domain: 'gmail.com',
+  authentication: :plain,
+  user_name: 'username',
+  password: 'password',
+  enable_starttls_auto: true
 }
 
 end
