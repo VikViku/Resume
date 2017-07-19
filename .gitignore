@@ -28,7 +28,7 @@ config/initializers/secret_token.rb
 
 # dotenv
 # TODO Comment out this rule if environment variables can be committed
-.env
+
 
 ## Environment normalization:
 /.bundle
@@ -52,3 +52,6 @@ bower.json
 .byebug_history
 
 *.sw*
+
+# Ignore application configuration
+/config/application.yml

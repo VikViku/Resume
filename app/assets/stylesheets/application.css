@@ -13,11 +13,12 @@
  *= require font-awesome
  *= require home
  *= require education
- *= require experience
- *= require interest
- *= require language
  *= require skill
  *= require user
- *= require workshop
  *= require_self
  */
+
+
+#notify {
+	display: none;
+}

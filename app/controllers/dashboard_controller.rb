@@ -1,11 +1,8 @@
 class DashboardController < ApplicationController
-<<<<<<< HEAD
   layout 'dashboard'
   before_action :authenticate_user!
-=======
-	# layout "dashboard"
-	def dashboard
+
+	def index
 		
 	end
->>>>>>> dashboard
 end

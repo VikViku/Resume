@@ -17,6 +17,9 @@
 
 
  $(document).ready(function() {
+ 	var msg = $('#notify').text();
+ 	$.notify(msg, 'success');
+ 	
       $('.progress .progress-bar').css("width",
                 function() {
                     return $(this).attr("aria-valuenow") + "%";
