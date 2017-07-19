@@ -1,5 +1,5 @@
 # Change these
-server '195.181.241.244', port: 80, roles: [:web, :app, :db], primary: true
+server '195.181.241.244', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@bitbucket.org:railscourseteam/resume.git'
 set :application,     'resume'
