@@ -60,14 +60,15 @@ config.action_mailer.delivery_method = :smtp
 config.active_job.queue_adapter = :sidekiq
 
 
-config.action_mailer.smtp_settings = 
-address: "smtp.gmail.com",
-port: 587,
-domain: ENV["GMAIL_DOMAIN"],
-authentication: :plain,
-user_name: ENV["GMAIL_USERNAME"],
-password: ENV["GMAIL_PASSWORD"],
-enable_starttls_auto: true
+config.action_mailer.smtp_settings =
+  {
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: ENV["GMAIL_DOMAIN"],
+    authentication: :plain,
+    user_name: ENV["GMAIL_USERNAME"],
+    password: ENV["GMAIL_PASSWORD"],
+    enable_starttls_auto: true
 }
 
 end
