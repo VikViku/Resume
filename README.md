@@ -1,4 +1,4 @@
-# Resume
+# Resume - (nebaigtas)
 
 Puslapis, skirtas trumpai ir įdomiai pristatyti save potencialiam darbdaviui. Sekcijos: apie mane, patirtis, akademiniai pasiekimai, įgūdžiai ir gebėjimai, kalbų mokėjimo lygiai, pomėgiai, kontaktai. Galimybė atsisiųsti pilną CV pdf formatu. Puslapis pasiekiamas trimis kalbomis: lietuvių, italų bei anglų.
 
