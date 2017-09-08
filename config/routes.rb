@@ -7,11 +7,9 @@ Rails.application.routes.draw do
   root to: 'home#index'
 
   get '/home', to: 'home#index'
-
+  get '/admin', to: 'dashboard#index'
 
   resources :contacts, only: [:new, :create]
-
-  resources :dashboard
 
   namespace :admin do
     resources :experiences
