@@ -8,18 +8,19 @@
 capybara-*.html
 .rspec
 config/database.yml
+config/application.yml
 /log
 /tmp
 /db/*.sqlite3
 /db/*.sqlite3-journal
-/public/system
+/db/*.sql
+/public/*
 /coverage/
 /spec/tmp
 *.orig
 .env
 rerun.txt
 pickle-email-*.html
-secrets_backup.yml
 
 # TODO Comment out this rule if you are OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb
