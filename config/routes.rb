@@ -1,20 +1,25 @@
+require 'sidekiq/web'
+
 Rails.application.routes.draw do
 
+  resources :photos
   devise_for :users
 
-  # mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  mount Sidekiq::Web => '/sidekiq'
 
-  root to: 'home#index'
-
-  get '/home', to: 'home#index'
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   get '/admin', to: 'dashboard#index'
 
-  resources :contacts, only: [:new, :create]
+    # match ':locale', to: 'home#change_locale', as: :change_locale, via: [:get]
 
-  namespace :admin do
-    resources :experiences
+   scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
+
+    
+    get '/home', to: 'home#index'
+
+    resources :contacts, only: [:new, :create]
+    resources :users, :educations, :experiences, :languages, :skills, :workshops
+
+    root to: 'home#index'
   end
-
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

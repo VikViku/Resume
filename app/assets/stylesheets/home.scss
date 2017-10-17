@@ -21,6 +21,7 @@ header {
 
 .container-fluid {
     margin-bottom: 30px;
+    padding-top: 15px;
 }
 
 
@@ -50,4 +51,9 @@ footer {
   list-style: none;
   display: inline;
   margin-right: 10px;
+}
+
+p.desc_style {
+  text-align: justify;
+  text-indent: 25px;
 }

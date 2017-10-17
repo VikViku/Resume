@@ -1,0 +1,14 @@
+<section id="sec_experi">
+
+<div class="container-fluid">
+	<h1><%= t("navigator.experience") %></h1>
+	<% @experiences.each do |exp| %>
+	<button data-toggle="collapse" data-target="#<%= exp.id %>"><%= exp.workplace %></button>
+	<div id="<%= exp.id %>" class="collapse">
+		<h3><%= exp.occupation %></h3>
+		<p><%= exp.desc %></p>
+	</div>
+	<% end %>
+</div>
+
+</section>

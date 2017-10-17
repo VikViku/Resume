@@ -30,18 +30,26 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem "font-awesome-rails"
-
 gem 'gentelella-rails'
 gem 'devise'
-gem 'pry'
 gem 'notifyjs_rails'
 gem 'sidekiq'
 gem 'redis-namespace'
-
-gem 'jquery-ui-rails'
 gem 'rails_admin', '~> 1.2'
 gem 'pry'
 gem 'figaro'
+
+
+gem 'bootstrap-sass'
+gem 'bootstrap-select-rails'
+gem 'flag-icons-rails'
+gem 'twitter-typeahead-rails'
+gem 'bootstrap_colorpicker_rails'
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+gem 'simple_form'
+gem 'dragonfly', '~> 1.1.3'
+gem 'light_gallery_rails', git: 'https://github.com/stNicolaas/light-gallery-rails.git'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

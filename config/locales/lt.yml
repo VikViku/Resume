@@ -1,3 +1,32 @@
 lt:
   hello_world: "Labas, pasauli!"
   goodbye: "Sudie!"
+
+  flag: lt
+  en: "Angliškai"
+  encode: en
+  lt: "Lietuviškai"
+  ltcode: lt
+  it: "Itališkai"
+  itcode: it
+
+  navigator:
+    more: "Skaityti daugiau"
+    about: "Apie mane"
+    education: "Išsilavinimas"
+    experience: "Patirtis"
+    skill: "Kompiuteriniai įgūdžiai"
+    other: "Kita informacija"
+    gallery: "Galerija"
+    forum: "Forumas"
+    contact: "Kontaktai"
+    contactme: "Susisiekti"
+
+  resume:
+    title: "Laisvai samdoma Web svetainių kūrėja ir dizainerė"
+    desc_html: |
+      I have strong passionate about the newest web technologies that led me to dive deeper in this area. 
+      For some time I have been actively working with <i>Ruby on Rails</i>, <i>Javascript</i>, <i>JQuery</i>, <i>HTML5</i>, <i>CSS3</i>. 
+      I have already used to try <i>Python</i>, <i>Django</i>, and <i>AngularJS</i>. I am always happy to have new challenges and opportunities 
+      to improve my skills and learn something new. Also, aiming for code quality and customer satisfaction. If you are interested to collaborate 
+      with me, do not hesitate to get in touch!

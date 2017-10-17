@@ -10,10 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170711051243) do
+ActiveRecord::Schema.define(version: 20171013175357) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "baths", id: :serial, force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "avatar_file_name"
+    t.string "avatar_content_type"
+    t.integer "avatar_file_size"
+    t.datetime "avatar_updated_at"
+  end
+
+  create_table "categories", id: :serial, force: :cascade do |t|
+    t.string "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "contacts", force: :cascade do |t|
     t.string "name"
@@ -59,6 +76,51 @@ ActiveRecord::Schema.define(version: 20170711051243) do
     t.index ["user_id"], name: "index_languages_on_user_id"
   end
 
+  create_table "photos", force: :cascade do |t|
+    t.string "image_uid"
+    t.string "image_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "price_lists", id: :serial, force: :cascade do |t|
+    t.integer "program_id"
+    t.integer "procedure_id"
+    t.float "price"
+    t.integer "people"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "time"
+    t.integer "bath_id"
+    t.index ["bath_id"], name: "index_price_lists_on_bath_id"
+    t.index ["procedure_id"], name: "index_price_lists_on_procedure_id"
+    t.index ["program_id"], name: "index_price_lists_on_program_id"
+  end
+
+  create_table "procedures", id: :serial, force: :cascade do |t|
+    t.integer "category_id"
+    t.string "title"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "avatar_file_name"
+    t.string "avatar_content_type"
+    t.integer "avatar_file_size"
+    t.datetime "avatar_updated_at"
+    t.index ["category_id"], name: "index_procedures_on_category_id"
+  end
+
+  create_table "programs", id: :serial, force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "avatar_file_name"
+    t.string "avatar_content_type"
+    t.integer "avatar_file_size"
+    t.datetime "avatar_updated_at"
+  end
+
   create_table "skills", force: :cascade do |t|
     t.string "title"
     t.bigint "user_id"
@@ -85,8 +147,21 @@ ActiveRecord::Schema.define(version: 20170711051243) do
     t.datetime "last_sign_in_at"
     t.inet "current_sign_in_ip"
     t.inet "last_sign_in_ip"
+    t.boolean "isOwner"
+    t.boolean "admin", default: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  end
+
+  create_table "various_contents", id: :serial, force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "header_file_name"
+    t.string "header_content_type"
+    t.integer "header_file_size"
+    t.datetime "header_updated_at"
   end
 
   create_table "workshops", force: :cascade do |t|

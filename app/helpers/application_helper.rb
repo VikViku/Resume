@@ -5,4 +5,10 @@ module ApplicationHelper
   	return 'progress-bar-info' if value < 80
   	return 'progress-bar-success' if value <= 100
   end
+
+  def alternate_locales
+  	I18n.available_locales.map{|l|
+    	yield(l)
+  	}.join.html_safe
+end
 end

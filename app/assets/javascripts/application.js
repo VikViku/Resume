@@ -10,10 +10,13 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
+//= require jquery_ujs
 //= require jquery-ui
-//= require rails-ujs
 //= require notifyjs_rails
-
+//= require light-gallery
+//= require bootstrap
+//= require bootstrap-sprockets
 
 
  $(document).ready(function() {
@@ -26,3 +29,8 @@
                 }
         )
     });
+
+$('#aniimated-thumbnials').lightGallery({
+    thumbnail:true
+}); 
+ 

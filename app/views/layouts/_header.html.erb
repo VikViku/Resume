@@ -1,0 +1,51 @@
+<header>
+
+
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-spy="scroll" data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+      <a class="navbar-brand" href="#">
+        <span><%= image_tag "jewel_logo.gif", :alt => "logo", :width => 50, :class => "d-inline-block align-left" %></span> Web Jewelist</a>
+</a>
+    </div> <!-- end div class="navbar-header" -->
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= t("navigator.more")%><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><%= link_to t("navigator.about"), root_url(:anchor => "about")%></li>
+            <li><%= link_to t("navigator.education"), root_url(:anchor => "sec_educat")%></li>
+            <li><%= link_to t("navigator.experience"), root_url(:anchor => "sec_experi") %></li>
+            <li><%= link_to t("navigator.skill"), root_url(:anchor => "sec_skills") %></li>
+            <li><%= link_to t("navigator.other"), root_url(:anchor => "sec_other") %></li>
+          </ul>
+        </li>
+        <li class="cl-effect-1"><%= link_to t("navigator.gallery"), photos_path %></li>
+        <li class="cl-effect-1"><%= link_to t("navigator.forum") %></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="cl-effect-1"><%= link_to t("navigator.contact"), root_url(:anchor => "sec_contact") %></li>
+        <li><%= render 'layouts/language_switch' %></li>
+      </ul>
+    </div> <!-- end div class="collapse navbar-collapse" -->
+  </div> <!-- end div class="container" -->
+</div> <!-- end div class="navbar navbar-default navbar-fixed-top" -->
+
+
+<div class="container-fluid">
+  <div class="profile">
+		<%= image_tag "foto.jpg", :alt => "mano foto", :class => "img-profile" %>
+  </div>
+		<h1>
+			<%= @owner.first_name %>
+			<%= @owner.last_name %>
+		</h1>
+		<h4><%= t("resume.title") %></h4>
+</div>
+</header>

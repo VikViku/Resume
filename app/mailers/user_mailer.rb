@@ -5,6 +5,6 @@ class UserMailer < ApplicationMailer
 	@name = contact.name
 	@email  = contact.email
 	@text = contact.text
-	mail(to: 's.vikvik@gmail.com', subject: 'Welcome to My Awesome Site')
+	mail(to: 's.vikvik@gmail.com', subject: 'Žinutė iš WebJewelist')
  	end
 end

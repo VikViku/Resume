@@ -1,0 +1,37 @@
+<div class="btn-group dropdown">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    <%= flag_icon t("flag") %> <%= t(I18n.locale) %> <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu languages" role="menu">
+    <% if t("flag") != 'lt' %>
+    <li>
+      <%= link_to t("ltcode"), params.merge(locale: "lt") do %>
+      <%= flag_icon(:lt) %>
+      <%= t(:lt) %>
+      <% end %>
+    </li>
+    <% end %>
+    <% if t("flag") != 'gb' %>
+    <li>
+      <%= link_to t("encode"), params.merge(locale: "en") do %>
+      <%= flag_icon(:gb) %>
+      <%= t(:en) %>
+      <% end %>
+    </li>
+    <% end %>
+    <% if t("flag") != 'it' %>
+    <li>
+      <%= link_to t("itcode"), params.merge(locale: "it") do %>
+      <%= flag_icon(:it) %>
+      <%= t(:it) %>
+      <% end %>
+    </li>
+    <% end %>
+  </ul>
+</div>
+
+<script type="text/javascript">
+	$('.dropdown-toggle').dropdown();
+</script>
+
+

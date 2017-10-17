@@ -1,15 +1,46 @@
-<%= render "partials/header" %>
+<%= render "layouts/header" %>
 
-<%= render "partials/about" %>
+<%= render "layouts/about" %>
 
-<%= render "partials/educations" %>
+<%= render "educations/index" %>
 
-<%= render "partials/experiences" %>
+<%= render "experiences/index" %>
 
-<%= render "partials/skills" %>
+<%= render "skills/index" %>
 
-<%= render "partials/wli" %>
+<section id="sec_other">
+	<div class="container-fluid">
+		<div class="work-lang-int-block">
+			<h1><%= t(:workshop_language_interest) %> </h1>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="content">
+						<% @workshops.each do |ws| %>
+						<%= ws.title %>
+						<% end %>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="content">
+						<% @languages.each do |lang| %>
+						<%= lang.name %>
+						<%= lang.level %>
+						<% end %>
+						</div>				
+				</div>
+				<div class="col-md-4">
+					<div class="content">
+						<% @interests.each do |hobby| %>
+						<%= hobby.title %>
+						<% end %>
+					</div>				
+				</div>
+		</div>	
+		</div>
+	</div>
+</section>
+
 
 <%= render "contact/new", contact: @contact %>
 
-<%= render "partials/footer" %>
+<%= render "layouts/footer" %>

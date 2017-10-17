@@ -33,3 +33,34 @@ en:
   hello_world: "Hello world"
   goodbye: "Bye bye"
   about: "About Me"
+
+
+  flag: gb
+  en: "English"
+  encode: en
+  lt: "Lithuanian"
+  ltcode: lt
+  it: "Italian"
+  itcode: it
+
+
+  navigator:
+    more: "Read more"
+    about: "About Me"
+    education: "Education"
+    experience: "Experience"
+    skill: "Computer Skills"
+    other: "Other information"
+    gallery: "Gallery"
+    forum: "Forum"
+    contact: "Contacts"
+    contactme: "Contact Me"
+
+  resume:
+    title: "Freelance Web Designer and Developer"
+    desc_html: |
+      I have strong passionate about the newest web technologies that led me to dive deeper in this area. 
+      For some time I have been actively working with <i>Ruby on Rails</i>, <i>Javascript</i>, <i>JQuery</i>, <i>HTML5</i>, <i>CSS3</i>. 
+      I have already used to try <i>Python</i>, <i>Django</i>, and <i>AngularJS</i>. I am always happy to have new challenges and opportunities 
+      to improve my skills and learn something new. Also, aiming for code quality and customer satisfaction. If you are interested to collaborate 
+      with me, do not hesitate to get in touch!

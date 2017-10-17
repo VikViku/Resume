@@ -9,7 +9,7 @@ class ContactsController < ApplicationController
 		# binding.pry
 		@contact = Contact.new(msg_params)
 		if @contact.save
-			UserMailer.contact_me(@contact).deliver_later
+			UserMailer.contact_me(@contact).deliver
 			redirect_to root_path, :notice => "Your message is sent successfully!"
     	else
 			render :new, :notice => "Something went wrong!"

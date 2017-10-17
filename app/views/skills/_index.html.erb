@@ -1,0 +1,13 @@
+<section id="sec_skills">
+	<div class="container-fluid">
+			<h1><%= t("navigator.skill") %> </h1>
+		    <% @skills.each do |skill| %>
+            <div class="progress">
+                <div class="progress-bar <%= progress_class(skill.level) %>" aria-valuenow="<%= skill.level %>" aria-valuemin="0" aria-valuemax="100">
+                    <span class="skill"><%= skill.title %> <i class="val"><%= skill.level %>%</i></span>
+                </div>
+            </div>
+            <% end %>
+		</div>
+	</div>
+</section>

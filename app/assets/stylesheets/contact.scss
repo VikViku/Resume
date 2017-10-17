@@ -1,3 +1,25 @@
 // Place all the styles related to the Contact controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.simple_form {
+    float: none;
+    text-align : center;
+    border: 3px double #CCC;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20%;
+}
+.simple_form .input-box {
+    margin-bottom: 10px;
+}
+.simple_form input {
+    margin-bottom: 10px;
+    margin: 2px 20px;
+    display: inline-block;
+}
+
+.simple_form label {
+    display: block;
+}
