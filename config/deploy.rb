@@ -1,7 +1,7 @@
 # Change these
-server '195.181.241.244', port: 22, roles: [:web, :app, :db], primary: true
+server '80.208.226.127', port: 22, roles: [:web, :app, :db], primary: true
 
-set :repo_url,        'git@bitbucket.org:railscourseteam/resume.git'
+set :repo_url,        'git@github.com:VikViku/Resume.git'
 set :application,     'resume'
 set :user,            'deploy'
 set :puma_threads,    [4, 16]
