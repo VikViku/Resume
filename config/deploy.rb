@@ -1,4 +1,3 @@
-require "bundler/capistrano"
 # Change these
 server '80.208.226.127', port: 22, roles: [:web, :app, :db], primary: true
 
