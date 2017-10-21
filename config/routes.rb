@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :photos
   devise_for :users
+  get "/404", to: "errors#error_404"
 
   mount Sidekiq::Web => '/sidekiq'
 
