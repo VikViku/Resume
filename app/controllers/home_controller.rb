@@ -6,7 +6,7 @@ class HomeController < ApplicationController
 	def index
 		@contact = Contact.new
 		users = User.all.count
-		if users != 0
+		if users == 0
 			render plain: 'No user, no site. :( Grįšim vėliau.'
 		else
 			@owner = User.where(isOwner: true).limit(1).first
