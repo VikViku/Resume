@@ -79,7 +79,9 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
   database: resume_production
+  pool: 5
   username: resume
-  password: <%= ENV['RESUME_DATABASE_PASSWORD'] %>
+  password: vikvik

@@ -38,7 +38,7 @@ gem 'redis-namespace'
 gem 'rails_admin', '~> 1.2'
 gem 'pry'
 gem 'figaro'
-
+gem 'yaml_db'
 
 gem 'bootstrap-sass'
 gem 'bootstrap-select-rails'
