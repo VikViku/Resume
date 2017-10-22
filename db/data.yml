@@ -1,0 +1,341 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - '2017-07-22 08:56:30.447723'
+    - '2017-07-22 08:56:30.447723'
+
+---
+contacts:
+  columns:
+  - id
+  - name
+  - email
+  - text
+  - created_at
+  - updated_at
+  records: 
+  - - 3
+    - ''
+    - ''
+    - ''
+    - '2017-10-12 09:16:24.427236'
+    - '2017-10-12 09:16:24.427236'
+  - - 4
+    - Viktorija
+    - s.vikvik@gmail.com
+    - Ši žinutė, tai testas. Turiu gauti paštu pranešimą.
+    - '2017-10-12 10:53:48.836439'
+    - '2017-10-12 10:53:48.836439'
+  - - 5
+    - Viktorija Šukvietytė§
+    - s.vikvik@gmail.com
+    - rrrr
+    - '2017-10-12 10:56:13.083023'
+    - '2017-10-12 10:56:13.083023'
+  - - 6
+    - Viktorija Šukvietytė
+    - s.vikvik@gmail.com
+    - test
+    - '2017-10-12 11:43:08.685609'
+    - '2017-10-12 11:43:08.685609'
+  - - 7
+    - Viktorija Šukvietytė
+    - s.vikvik@gmail.com
+    - Tralialia
+    - '2017-10-12 11:49:51.455894'
+    - '2017-10-12 11:49:51.455894'
+  - - 8
+    - Viktorija Šukvietytė
+    - s.vikvik@gmail.com
+    - ''
+    - '2017-10-12 11:54:37.527554'
+    - '2017-10-12 11:54:37.527554'
+  - - 9
+    - Viktorija Šukvietytė
+    - s.vikvik@gmail.com
+    - ''
+    - '2017-10-12 11:57:20.470844'
+    - '2017-10-12 11:57:20.470844'
+  - - 10
+    - Viktorija Šukvietytė
+    - s.vikvik@gmail.com
+    - Sau laišką siunčiu
+    - '2017-10-12 11:57:40.689866'
+    - '2017-10-12 11:57:40.689866'
+  - - 11
+    - Viktorija Šukvietytė
+    - s.vikvik@gmail.com
+    - ":)"
+    - '2017-10-12 11:59:00.438922'
+    - '2017-10-12 11:59:00.438922'
+  - - 12
+    - Viktorija Šukvietytė
+    - s.vikvik@gmail.com
+    - lia lia lia
+    - '2017-10-12 14:57:38.004371'
+    - '2017-10-12 14:57:38.004371'
+
+---
+educations:
+  columns:
+  - id
+  - university
+  - course
+  - user_id
+  - created_at
+  - updated_at
+  records: 
+  - - 4
+    - Vilnius Gediminas Technical University
+    - Bachelor of Computer Science
+    - 1
+    - '2017-10-05 08:50:46.580627'
+    - '2017-10-12 07:40:58.720077'
+  - - 5
+    - Free University of Bozen - Bolzano
+    - Master of Computer Science
+    - 1
+    - '2017-10-05 08:52:03.119683'
+    - '2017-10-12 09:00:22.314554'
+  - - 6
+    - Šiuolaikinės Mokyklos Centras
+    - High School
+    - 1
+    - '2017-10-11 18:25:15.626943'
+    - '2017-10-11 19:17:09.439476'
+
+---
+experiences:
+  columns:
+  - id
+  - workplace
+  - occupation
+  - desc
+  - user_id
+  - created_at
+  - updated_at
+  records: 
+  - - 4
+    - Lithuanian Computer Society
+    - System administrator at the conference
+    - Responsible for registration of participants in a traditional biennial multi-event
+      “Computer Days”. (http://www.liks.lt). Developer of information system for the
+      registration of the event participants.
+    - 1
+    - '2017-10-05 08:53:28.416436'
+    - '2017-10-05 08:53:28.416436'
+
+---
+interests:
+  columns:
+  - id
+  - title
+  - user_id
+  - created_at
+  - updated_at
+  records: 
+  - - 4
+    - Digital Photography
+    - 1
+    - '2017-10-05 08:54:08.005666'
+    - '2017-10-05 08:54:08.005666'
+  - - 5
+    - Travelling
+    - 1
+    - '2017-10-05 08:54:20.777191'
+    - '2017-10-05 08:54:20.777191'
+  - - 6
+    - Hiking
+    - 1
+    - '2017-10-05 08:54:29.579151'
+    - '2017-10-05 08:54:29.579151'
+  - - 7
+    - Aerial Yoga
+    - 1
+    - '2017-10-05 08:54:38.327065'
+    - '2017-10-05 08:54:38.327065'
+
+---
+languages:
+  columns:
+  - id
+  - name
+  - level
+  - user_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - English
+    - B2
+    - 1
+    - '2017-07-22 08:56:31.391553'
+    - '2017-07-22 08:56:31.391553'
+  - - 2
+    - Italian
+    - A2
+    - 1
+    - '2017-07-22 08:56:31.396996'
+    - '2017-07-22 08:56:31.396996'
+  - - 3
+    - Russian
+    - A2
+    - 1
+    - '2017-07-22 08:56:31.40124'
+    - '2017-10-05 08:55:11.74893'
+  - - 4
+    - Lithuanian
+    - Native
+    - 1
+    - '2017-10-05 08:55:44.272647'
+    - '2017-10-05 09:23:56.921727'
+
+---
+photos:
+  columns:
+  - id
+  - image_uid
+  - image_name
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 2017/10/13/58ss91okgu_12002890_10153170115997947_9072023379742194105_n.jpg
+    - 12002890_10153170115997947_9072023379742194105_n.jpg
+    - '2017-10-13 14:11:37.91492'
+    - '2017-10-13 14:11:37.91492'
+  - - 2
+    - 2017/10/13/9oczbpgnm5_564_copy3.jpg
+    - 564 copy3.jpg
+    - '2017-10-13 14:48:25.818545'
+    - '2017-10-13 14:48:25.818545'
+
+---
+skills:
+  columns:
+  - id
+  - title
+  - user_id
+  - created_at
+  - updated_at
+  - level
+  records: 
+  - - 4
+    - SQL
+    - 1
+    - '2017-10-05 08:56:54.477265'
+    - '2017-10-05 08:56:54.477265'
+    - 80
+  - - 5
+    - HTML5
+    - 1
+    - '2017-10-05 08:57:21.884831'
+    - '2017-10-05 08:57:21.884831'
+    - 80
+  - - 6
+    - CSS3
+    - 1
+    - '2017-10-05 08:58:08.352084'
+    - '2017-10-05 08:58:08.352084'
+    - 60
+  - - 7
+    - Javascript
+    - 1
+    - '2017-10-05 08:58:24.765342'
+    - '2017-10-05 08:58:24.765342'
+    - 40
+  - - 8
+    - Ruby
+    - 1
+    - '2017-10-05 08:58:34.762738'
+    - '2017-10-05 08:58:34.762738'
+    - 50
+  - - 9
+    - Python
+    - 1
+    - '2017-10-05 08:58:59.688706'
+    - '2017-10-05 08:58:59.688706'
+    - 50
+  - - 10
+    - Java
+    - 1
+    - '2017-10-05 08:59:08.990315'
+    - '2017-10-05 08:59:08.990315'
+    - 50
+  - - 11
+    - Photoshop
+    - 1
+    - '2017-10-05 08:59:29.489849'
+    - '2017-10-05 08:59:29.489849'
+    - 80
+
+---
+users:
+  columns:
+  - id
+  - first_name
+  - last_name
+  - title
+  - desc
+  - created_at
+  - updated_at
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - isOwner
+  - admin
+  records: 
+  - - 1
+    - Viktorija
+    - Šukvietytė
+    - Freelancer Web Designer and Developer
+    - Build websites, blogs and forums. Passionate about cutting edge web technologies.
+    - '2017-07-22 08:56:30.767923'
+    - '2017-10-05 09:22:57.592683'
+    - viktorija.sukvietyte@gmail.com
+    - "$2a$11$t3FCBDvxm48Mlzs7jQsmSeiuD6nGj3hpdW/laiHaLTxk1DUa2mNTK"
+    - 
+    - 
+    - 
+    - 1
+    - '2017-09-08 15:48:00'
+    - '2017-09-08 15:48:00'
+    - 127.0.0.1
+    - 127.0.0.1
+    - true
+    - false
+
+---
+workshops:
+  columns:
+  - id
+  - title
+  - user_id
+  - created_at
+  - updated_at
+  records: 
+  - - 4
+    - DJango Girls workshop
+    - 1
+    - '2017-10-05 09:05:13.354619'
+    - '2017-10-05 09:05:13.354619'
+  - - 5
+    - RailsGirls54 Workshop
+    - 1
+    - '2017-10-05 09:05:30.746765'
+    - '2017-10-05 09:05:30.746765'
