@@ -32,7 +32,7 @@ set :rvm_ruby_version, 'ruby-2.3.4'
 # set :keep_releases, e
 
 ## Linked Files & Directories (Default None):
-set :linked_files, %w{config/database.yml config/dapplication.yml }
+set :linked_files, %w{config/database.yml config/application.yml }
 set :linked_dirs,  %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 namespace :puma do
