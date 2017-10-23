@@ -6,14 +6,16 @@ body {
     font-family: Roboto,Helvetica,Arial,sans-serif;
     font-size: 14px;
     margin: 0;
-}
-
-header {
+      background-image: url("fonas.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
   background-size: cover;
   width: 100%;
+}
+
+header {
+
   min-height: 100vh;
   text-align: center;
   color: white;
