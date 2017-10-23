@@ -8,8 +8,10 @@ body {
     margin: 0;
 }
 
-header {
-  background-image: url("foto.JPG") no-repeat center center;
+.fonas {
+  background-image: image-url('fonas.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   width: 100%;
   min-height: 100vh;
