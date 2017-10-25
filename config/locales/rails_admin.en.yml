@@ -1,19 +1,84 @@
 en:
-  home:
-    name: Home
-  views:
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: about 1 hour
+        other: about %{count} hours
+      about_x_months:
+        one: about 1 month
+        other: about %{count} months
+      about_x_years:
+        one: about 1 year
+        other: about %{count} years
+      almost_x_years:
+        one: almost 1 year
+        other: almost %{count} years
+      half_a_minute: half a minute
+      less_than_x_minutes:
+        one: less than a minute
+        other: less than %{count} minutes
+      less_than_x_seconds:
+        one: less than 1 second
+        other: less than %{count} seconds
+      over_x_years:
+        one: over 1 year
+        other: over %{count} years
+      x_days:
+        one: 1 day
+        other: "%{count} days"
+      x_minutes:
+        one: 1 minute
+        other: "%{count} minutes"
+      x_months:
+        one: 1 month
+        other: "%{count} months"
+      x_years:
+        one: 1 year
+        other: "%{count} years"  
+      x_seconds:
+        one: 1 second
+        other: "%{count} seconds"
+    prompts:
+      day: Day
+      hour: Hour
+      minute: Minute
+      month: Month
+      second: Seconds
+      year: Year
+  admin:
+    js:
+      true: True
+      false: False
+      is_present: Is present
+      is_blank: Is blank
+      date: Date ...
+      between_and_: Between ... and ...
+      today: Today
+      yesterday: Yesterday
+      this_week: This week
+      last_week: Last week
+      number: Number ...
+      contains: Contains
+      is_exactly: Is exactly
+      starts_with: Starts with
+      ends_with: Ends with
+      too_many_objects: "Too many objects, use search box above"
+      no_objects: "No objects found"
+    loading: "Loading..."
+    toggle_navigation: Toggle navigation
+    home:
+      name: "Home"
     pagination:
       previous: "&laquo; Prev"
       next: "Next &raquo;"
       truncate: "…"
-  admin:
     misc:
       search: "Search"
       filter: "Filter"
       refresh: "Refresh"
       show_all: "Show all"
-      add_filter: "Add filter..."
-      bulk_menu_title: "Selected items..."
+      add_filter: "Add filter"
+      bulk_menu_title: "Selected items"
       remove: "Remove"
       add_new: "Add new"
       chosen: "Chosen %{name}"
@@ -22,8 +87,10 @@ en:
       up: "Up"
       down: "Down"
       navigation: "Navigation"
+      navigation_static_label: "Links"
       log_out: "Log out"
       ago: "ago"
+      more: "Plus %{count} more %{models_name}"
     flash:
       successful: "%{name} successfully %{action}"
       error: "%{name} failed to be %{action}"
@@ -32,7 +99,7 @@ en:
       object_not_found: "%{model} with id '%{id}' could not be found"
     table_headers:
       model_name: "Model name"
-      last_used: "Last used"
+      last_created: "Last created"
       records: "Records"
       username: "User"
       changes: "Changes"
@@ -41,7 +108,7 @@ en:
       message: "Message"
     actions:
       dashboard:
-        title: "Site administration"
+        title: "Site Administration"
         menu: "Dashboard"
         breadcrumb: "Dashboard"
       index:
@@ -78,7 +145,7 @@ en:
         breadcrumb: "Multiple delete"
         bulk_link: "Delete selected %{model_label_plural}"
       export:
-        title: "Export %{model_label}"
+        title: "Export %{model_label_plural}"
         menu: "Export"
         breadcrumb: "Export"
         link: "Export found %{model_label_plural}"
@@ -106,11 +173,12 @@ en:
       all_of_the_following_related_items_will_be_deleted: "? The following related items may be deleted or orphaned:"
       are_you_sure_you_want_to_delete_the_object: "Are you sure you want to delete this %{model_name}"
       confirmation: "Yes, I'm sure"
-      delete_confirmation: "Delete confirmation"
       bulk_delete: "The following objects will be deleted, which may delete or orphan some of their related dependencies:"
-    export:      
+      new_model: "%{name} (new)"
+    export:
       confirmation: "Export to %{name}"
       select: "Select fields to export"
+      select_all_fields: "Select All Fields"
       fields_from: "Fields from %{name}"
       fields_from_associated: "Fields from associated %{name}"
       display: "Display %{name}: %{type}"

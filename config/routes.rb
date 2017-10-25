@@ -2,25 +2,19 @@ require 'sidekiq/web'
 
 Rails.application.routes.draw do
 
-  resources :photos
-  devise_for :users
-  get "/404", to: "errors#error_404"
+  scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
 
-  mount Sidekiq::Web => '/sidekiq'
-
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  get '/admin', to: 'dashboard#index'
-
-    # match ':locale', to: 'home#change_locale', as: :change_locale, via: [:get]
-
-   scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
-
-    
-    get '/home', to: 'home#index'
-
-    resources :contacts, only: [:new, :create]
-    resources :users, :educations, :experiences, :languages, :skills, :workshops
-
+    devise_for :users
+    get "/404", to: "errors#error_404"
     root to: 'home#index'
+
+    mount Sidekiq::Web => '/sidekiq'
+    mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+    
+    resources :contacts, only: [:new, :create]
+    resources :users, :educations, :experiences, :languages, :skills, :workshops, :photos
+    
+    # get '/admin', to: 'dashboard#index'
   end
+
 end

@@ -1,111 +1,176 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 it:
-  home:
-    name: "home"
-  views:
-    pagination:
-      previous: "&laquo; Prev"
-      next: "Next &raquo;"
-      truncate: "…"
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: about 1 hour
+        other: about %{count} hours
+      about_x_months:
+        one: about 1 month
+        other: about %{count} months
+      about_x_years:
+        one: about 1 year
+        other: about %{count} years
+      almost_x_years:
+        one: almost 1 year
+        other: almost %{count} years
+      half_a_minute: half a minute
+      less_than_x_minutes:
+        one: less than a minute
+        other: less than %{count} minutes
+      less_than_x_seconds:
+        one: less than 1 second
+        other: less than %{count} seconds
+      over_x_years:
+        one: over 1 year
+        other: over %{count} years
+      x_days:
+        one: 1 day
+        other: "%{count} days"
+      x_minutes:
+        one: 1 minute
+        other: "%{count} minutes"
+      x_months:
+        one: 1 month
+        other: "%{count} months"
+      x_years:
+        one: 1 year
+        other: "%{count} years"  
+      x_seconds:
+        one: 1 second
+        other: "%{count} seconds"
+    prompts:
+      day: Day
+      hour: Hour
+      minute: Minute
+      month: Month
+      second: Seconds
+      year: Year
+
   admin:
-    dashboard:
-      page_name: "Amministrazione sito"
-      name: "Pagina di riepilogo"
-      model_name: "Nome entità"
-      last_used: "Ultimo utilizzo"
-      records: "Elementi"
-      modify: "Modifica"
-      add_new: "Aggiungi nuovo"
-      show: "Mostra"
-      ago: "fa"
-    history:
-      name: "Cronologia"
-      page_name: "Cronologia per %{name}"
-      no_activity: "Nessuna attività"
-    show:
-      show_in_app: "Mostra in app"
-      page_name: "Dettagli per %{name}"
-      no_file_found: "Nessun file trovato"
-    credentials:
-      log_out: "Scollegati"
-    index:
-      edit_action: "Modifica"
-      delete_action: "Elimina"
-      select_action: "Seleziona"
-      export_action: "Esporta vista corrente"
-      show_action: "Mostra"
-      export_selected: "Esporta selezione"
-      delete_selected: "Elimina selezione"
-      add_new: "Aggiungi nuovo"
-      search: "Cerca"
-      select: "Seleziona %{name} da modificare"
-      show_all: "Mostra tutti"
-      add_filter: "Aggiungi filtro"
-    new:
-      basic_info: "Informazioni di base"
-      required: "Obbligatorio"
-      optional: "Opzionale"
-      one_char: "carattere"
-      many_chars: "caratteri o meno"
-      chosen: "%{name} scelto"
-      select_choice: "Seleziona e poi clicca"
-      chose_all: "Seleziona tutti"
-      clear_all: "Annulla selezione"
-      up: "Su"
-      down: "Giù"
-      save: "Salva"
-      save_and_add_another: "Salva e aggiungi nuovo"
-      save_and_edit: "Salva e modifica"
-      cancel: "Annulla"
-    delete:
-      all_of_the_following_related_items_will_be_deleted: "? Anche I seguenti elementi potrebbero essere eliminati:"
-      are_you_sure_you_want_to_delete_the_object: "Sei sicuro/a di voler eliminare questo %{model_name}"
-      confirmation: "Si, sono sicuro/a"
-      delete_confirmation: "Annulla eliminazione"
-      bulk_delete: "I seguenti elementi saranno eliminati. Questo potrebbe eliminare anche alcuni elementi ad essi collegati:"
-    export:
-      confirmation: "Esporta in %{name}"
-      select: "Seleziona i campi da esportare"
-      fields_from: "Campi da %{name}"
-      fields_from_associated: "Campi da %{name} associato"
-      display: "Mostra %{name}: %{type}"
-      options_for: "Opzioni per %{name}"
-      empty_value_for_associated_objects: "<nessuno>"
-      csv:
-        header_for_root_methods: "%{name}" # 'model' is available
-        header_for_association_methods: "%{name} [%{association}]"
-        encoding_to: "Trasforma in"
-        encoding_to_help: "Scegli encoding in uscita. Lascia vuoto per non cambiare encoding: (%{name})"
-        skip_header: "Nessun header"
-        skip_header_help: "Non mostrare header (nessuna descrizione dei campi)"
-        default_col_sep: ","
-        col_sep: "Separatore colonna"
-        col_sep_help: "Lascia vuoto per valore di default ('%{value}')" # value is default_col_sep
-    flash:
-      successful: "L' elemento %{name} è stato %{action} con successo"
-      error: "L' elemento %{name} non è stato %{action}"
-      noaction: "L' azione è stata annullata"
-      model_not_found: "Model '%{model}' could not be found"
-      object_not_found: "%{model} with id '%{id}' could not be found"
     actions:
-      create: "crea"
-      created: "creato"
-      update: "aggiorna"
-      updated: "aggiornato"
-      delete: "elimina"
-      deleted: "eliminato"
-      export: "esporta"
-      exported: "esportato"
-    breadcrumbs:
-      delete: "elimina"
-      history_show: "cronologia"
-      show: "mostra"
-      edit: "modifica"
-      export: "esporta"
-      bulk_destroy: "elimina"
-      new: "nuovo"
-      history_index: "cronologia"
-      index: "elenco"
-      dashboard: "riepilogo"
+      bulk_delete:
+        breadcrumb: Eliminazione multipla
+        bulk_link: Elimina %{model_label_plural} selezionati
+        menu: Eliminazione multipla
+        title: Elimina %{model_label_plural}
+      dashboard:
+        breadcrumb: Pannello di controllo
+        menu: Pannello di controllo
+        title: Amministrazione
+      delete:
+        breadcrumb: Elimina
+        done: eliminato
+        link: Elimina '%{object_label}'
+        menu: Elimina
+        title: Elimina %{model_label} '%{object_label}'
+      edit:
+        breadcrumb: Modifica
+        done: Modificato
+        link: Modifica questo %{model_label}
+        menu: Modifica
+        title: Modifica %{model_label} '%{object_label}'
+      export:
+        breadcrumb: Esporta
+        bulk_link: Esporta %{model_label_plural} selezionati
+        done: Esportati
+        link: Esporta %{model_label_plural} trovati
+        menu: Esporta
+        title: Esporta %{model_label_plural}
+      history_index:
+        breadcrumb: Storico
+        menu: Storico
+        title: Storico %{model_label_plural}
+      history_show:
+        breadcrumb: Storico
+        menu: Storico
+        title: Storico %{model_label} di '%{object_label}'
+      index:
+        breadcrumb: "%{model_label_plural}"
+        menu: Elenco
+        title: Elenco %{model_label_plural}
+      new:
+        breadcrumb: Nuovo
+        done: creato
+        link: Aggiungi nuovo %{model_label}
+        menu: Aggiungi nuovo
+        title: Nuovo %{model_label}
+      show:
+        breadcrumb: "%{object_label}"
+        menu: Visualizza
+        title: Dettaglio %{model_label} '%{object_label}'
+      show_in_app:
+        menu: Visualizza nell'applicazione
+    export:
+      click_to_reverse_selection: Clicca per invertire la selezione
+      confirmation: Esporta in  %{name}
+      csv:
+        col_sep: Separatore colonna
+        col_sep_help: Lasciare vuoto per il valore di default ('%{value}')
+        default_col_sep: ","
+        encoding_to: Codifica come
+        encoding_to_help: 'Seleziona la codifica di output. Lascia vuoto per tenere la codifica corrente: (%{name})'
+        header_for_association_methods: "%{name} [%{association}]"
+        header_for_root_methods: "%{name}"
+        skip_header: Nessuna intestazione
+        skip_header_help: Non esportare l'intestazione (nessuna descrizione per i campi)
+      display: 'Mostra %{name}: %{type}'
+      empty_value_for_associated_objects: "<empty>"
+      fields_from: Campi da %{name}
+      fields_from_associated: Campi da %{name} associato
+      options_for: Opzioni per %{name}
+      select: Seleziona i campi per esportare
+    flash:
+      error: "%{name} fallisce nel %{action}"
+      model_not_found: Modello '%{model}' non si trova
+      noaction: Nessuna azione presa
+      object_not_found: "%{model} con id '%{id}' non puo essere trovato"
+      successful: "%{name} esegue con successo %{action}"
+    form:
+      all_of_the_following_related_items_will_be_deleted: "? I seguenti elementi correlati potrebbero essere eliminati o resi orfani:"
+      are_you_sure_you_want_to_delete_the_object: Sei sicuro di voler eliminare questo %{model_name}
+      basic_info: Informazioni base
+      bulk_delete: 'I seguenti oggetti saranno eliminati, potrebbero essere eliminati o resi orfani anche i loro elementi correlati:'
+      cancel: Annulla
+      char_length_of: lunghezza di
+      char_length_up_to: lunghezza fino a
+      confirmation: Si, sono sicuro
+      new_model: "%{name} (new)"
+      one_char: carattere
+      optional: Opzionale
+      required: Obbligatorio
+      save: Salva
+      save_and_add_another: Salva ed aggiungi nuovo
+      save_and_edit: Salva e modifica
+    misc:
+      add_filter: Aggiungi filtro
+      add_new: Aggiungi filtro
+      ago: fa
+      bulk_menu_title: Elementi selezionati
+      chose_all: Seleziona tutto
+      chosen: Selezionato %{name}
+      clear_all: Pulisci
+      down: Giù
+      filter: Filtro
+      filter_date_format: dd/mm/yy
+      log_out: Esci
+      navigation: Navigazione
+      refresh: Ricarica
+      remove: Rimuovi
+      search: Cerca
+      show_all: Mostra tutto
+      up: Sopra
+    table_headers:
+      changes: Modifiche
+      created_at: Data/Ora
+      item: Elemento
+      last_used: Ultimo utilizzo
+      message: Messaggio
+      model_name: Nome modello
+      records: Elementi
+      username: Utente
+    home:
+      name: Home
+    pagination:
+      next: Prossima &raquo;
+      previous: "&laquo; Precedente"
+      truncate: "..."
