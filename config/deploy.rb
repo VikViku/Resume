@@ -8,7 +8,7 @@ set :puma_threads,    [4, 16]
 set :puma_workers,    0
 
 # Don't change these unless you know what you're doing
-set :pty,             true
+set :pty,             false
 set :use_sudo,        false
 set :stage,           :production
 set :deploy_via,      :remote_cache
@@ -23,6 +23,8 @@ set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, true  # Change to false when not using ActiveRecord
 set :rvm_ruby_version, 'ruby-2.3.4'
+## or use config.yml file
+set :sidekiq_config, "#{current_path}/config/sidekiq.yml"
 
 ## Defaults:
 # set :scm,           :git
