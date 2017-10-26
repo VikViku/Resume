@@ -32,8 +32,7 @@ require "capistrano/rvm"
 require "capistrano/bundler"
 require 'capistrano/rails'
 require 'capistrano/puma'
-require 'capistrano/sidekiq'
-require 'capistrano/sidekiq/monit' #to require monit tasks # Only for capistrano3
+# require 'capistrano/sidekiq'
 install_plugin Capistrano::Puma
 # require "capistrano/rails/assets"
 # require "capistrano/rails/migrations"
