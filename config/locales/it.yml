@@ -26,7 +26,9 @@ it:
     education: "Educazione"
     experience: "Esperienza"
     skill: "Competenze informatiche"
-    wli: "Corsi, Lingue e Interessi"
+    courses: "Corsi"
+    languages: "Lingue"
+    hobbies: "Interessi"
     other: "Altre informazione"
     gallery: "Galleria"
     forum: "Foro"
@@ -45,5 +47,20 @@ it:
     expdesc_html: |
       Sviluppatore del sistema informativo per la registrazione dei partecipanti all'evento. Applicazione web-based è stata sviluppata in Oracle Application Express (APEX).<br>
       Receptionist per i partecipanti in un tradizionale biennale multi-evento organizzato dalla Società Informatica Lituana (<a href="http://www.liks.lt">http://www.liks.lt</a>). 
-
+    workshop:
+      titles_html: |
+        DJango Girls Kaunas (workshop)<br>
+        RailsGirls54 Trento (workshop)<br>
+        Programmazione web con Ruby on Rails nella academia di <b>Baltic Talents</b> a Vilnius, Lituania
+    language:
+      names_html: |
+        Lituano madrelingua<br>
+        Inglese B2<br>
+        italiano A2
+    hobby:
+      titles_html: |
+        Fotografia digitale<br>
+        Viaggi<br>
+        Trekking<br>
+        Aereo Yoga
 

@@ -29,16 +29,21 @@ body {
 
 
 .work-lang-int-block {
-    background-color: #ECC8EC;
+ //   background-color: #ECC8EC;
     padding: 0 15px;
 }
 
 .content {
     width: 100%;
     background-color: #FFF;
-    padding: 25px;
+    padding: 7px;
     border-radius: 7px;
     margin-bottom: 20px;
+    border: solid 3px #2e6da4;
+}
+
+ul.nobullet {
+  list-style-type: none;
 }
 
 footer {

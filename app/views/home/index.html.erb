@@ -11,28 +11,35 @@
 <section id="sec_other">
 	<div class="container-fluid">
 		<div class="work-lang-int-block">
-			<h1><%= t("navigator.wli") %> </h1>
 			<div class="row">
 				<div class="col-md-4">
+					<h1><%= t("navigator.courses") %> </h1>
 					<div class="content">
-						<% @workshops.each do |ws| %>
-						<%= ws.title %>
-						<% end %>
+						<!-- <ul class="nobullet"> -->
+						<!-- <#% @workshops.each do |ws| %> -->
+						<%= t("resume.workshop.titles_html") %>
+						<!-- <#% end %> -->
+						<!-- </ul> -->
 					</div>
 				</div>
 				<div class="col-md-4">
+					<h1><%= t("navigator.languages") %> </h1>
 					<div class="content">
-						<% @languages.each do |lang| %>
-						<%= lang.name %>
-						<%= lang.level %>
-						<% end %>
+						<!-- <ul class="nobullet"> -->
+						<!-- # <#% @languages.each do |lang| %> -->
+						<%= t("resume.language.names_html") %>
+						<!-- <#% end %> -->
+<!-- 						</ul> -->
 						</div>				
 				</div>
 				<div class="col-md-4">
+					<h1><%= t("navigator.hobbies") %> </h1>				
 					<div class="content">
-						<% @interests.each do |hobby| %>
-						<%= hobby.title %>
-						<% end %>
+						<!-- <ul class="nobullet"> -->
+						<!-- <#% @interests.each do |hobby| %> -->
+						<%= t("resume.hobby.titles_html") %>
+						<!-- <#% end %> -->
+						<!-- </ul> -->
 					</div>				
 				</div>
 		</div>	

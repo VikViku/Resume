@@ -26,7 +26,9 @@ lt:
     education: "Išsilavinimas"
     experience: "Patirtis"
     skill: "Kompiuteriniai įgūdžiai"
-    wli: "Kursai, kalbos ir interesai"
+    courses: "Kursai"
+    languages: "Kalbos"
+    hobbies: "Interesai"
     other: "Kita informacija"
     gallery: "Galerija"
     forum: "Forumas"
@@ -41,8 +43,24 @@ lt:
       tokias technikas, kaip <i>Python</i>, <i>Django</i> bei <i>AngularJS</i>. Mėgstu iššūkius bei naujas galimybes, kurios leistų toliau tobulinti turimas 
       žinias ir įgūdžius bei išmokti kažką naujo. Visada stegiuosi atsižvelgti į kliento poreikius bei kodo kokybę. Jei susidomėjote ir norėtumėte bendradarbiauti, 
       užsakymų laukiu per žemiau esančią formą.
-    workplace: "Lietuvos Kompiuterininkų Sąjunga"
+    workplace: "Lietuvos kompiuterininkų sąjunga"
     occupation: "Informacinės sistemos administratorė konferencijoje"
     expdesc_html: |
       Dalyvių registracijos informacinės sistemos kūrimas Oracle Application Express (APEX) aplinkoje.<br>
       Dalyvių registravimas į kas dvejus metus vykstantį tradicinį renginį ”Kompiuterininkų dienos” (<a href="http://www.liks.lt">http://www.liks.lt</a>). 
+    workshop:
+      titles_html: |
+        DJango Girls Kaunas (dirbtuvės)<br>
+        RailsGirls54 Trento (dirbtuvės)<br>
+        Ruby on Rails web programavimo kursai <b>Baltic Talents</b> akademijoje (Vilnius, Lietuva)
+    language:
+      names_html: |
+        Lietuvių - gimtoji<br>
+        Anglų - B2<br>
+        italų - A2
+    hobby:
+      titles_html: |
+        Skaitmeninė fotografija<br>
+        Kelionės<br>
+        Žygiai<br>
+        Oro joga      

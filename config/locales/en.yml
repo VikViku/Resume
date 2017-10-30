@@ -59,7 +59,9 @@ en:
     education: "Education"
     experience: "Experience"
     skill: "Computer Skills"
-    wli: "Courses, Languages, and Interests"
+    courses: "Courses"
+    languages: "Languages"
+    hobbies: "Interests"
     other: "Other information"
     gallery: "Gallery"
     forum: "Forum"
@@ -79,6 +81,22 @@ en:
     expdesc_html: | 
       Responsible for registration of participants in a traditional biennial multi-event “Computer Days” (<a href="http://www.liks.lt">http://www.liks.lt</a>).<br>
       Developer of information system for the registration of the event participants.
+    workshop:
+      titles_html: |
+        DJango Girls Kaunas (workshop)<br>
+        RailsGirls54 Trento (workshop)<br>
+        Web programming with Ruby on Rails at <b>Baltic Talents</b> School in Vilnius, Lithuania
+    language:
+      names_html: |
+        Lithuanian - mothertongue<br>
+        English - B2<br>
+        italian - A2
+    hobby:
+      titles_html: |
+        Digital Photography<br>
+        Travelling<br>
+        Hiking<br>
+        Aerial Yoga
 
 
 
