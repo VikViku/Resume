@@ -9,7 +9,7 @@
 				<div class="timeline-panel">
 					<h4><%= uni.university %></h4>
 					<h5><%= uni.course %></h5>
-					<h4><small class="text-muted"><i class="glyphicon glyphicon-time"></i> DATA!!!</small></h4>
+					<h4><small class="text-muted"><%= uni.try(:started_at).try(:strftime, '%Y') %> - <%= uni.try(:graduated_at).try(:strftime, '%Y') %></small></h4>
 			</li>
 			<% end %>
 			<li><div class="timeline-badge primary">Start</li>

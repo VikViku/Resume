@@ -11,7 +11,7 @@ class HomeController < ApplicationController
 		else
 			@owner = User.where(isOwner: true).limit(1).first
 			@experiences = Experience.where(user_id: @owner.id)
-			@educations = Education.where(user_id: @owner.id)
+			@educations = Education.where(user_id: @owner.id).order('graduated_at DESC')
 			@workshops = Workshop.where(user_id: @owner.id)
 			@languages = Language.where(user_id: @owner.id)
 			@skills = Skill.where(user_id: @owner.id)

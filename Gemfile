@@ -50,7 +50,7 @@ gem 'jquery-ui-rails'
 gem 'simple_form'
 gem 'dragonfly', '~> 1.1.3'
 gem 'light_gallery_rails', git: 'https://github.com/stNicolaas/light-gallery-rails.git'
- 
+# gem 'thredded', '~> 0.13.7'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

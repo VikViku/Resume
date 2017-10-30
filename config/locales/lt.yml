@@ -2,6 +2,16 @@ lt:
   hello_world: "Labas, pasauli!"
   goodbye: "Sudie!"
 
+  contact:
+    label:
+      name: "Vardas"
+      email: "El. paštas"
+      text: "Žinutė"
+    placeholder:
+      name: "Jūsų vardas"
+      email: "Jūsų el. paštas"
+      text: "Jūsų užsakymai ir pasiūlymai"
+
   flag: lt
   en: "Angliškai"
   encode: en
@@ -16,6 +26,7 @@ lt:
     education: "Išsilavinimas"
     experience: "Patirtis"
     skill: "Kompiuteriniai įgūdžiai"
+    wli: "Kursai, kalbos ir interesai"
     other: "Kita informacija"
     gallery: "Galerija"
     forum: "Forumas"
@@ -25,8 +36,13 @@ lt:
   resume:
     title: "Laisvai samdoma Web svetainių kūrėja"
     desc_html: |
-      I have strong passionate about the newest web technologies that led me to dive deeper in this area. 
-      For some time I have been actively working with <i>Ruby on Rails</i>, <i>Javascript</i>, <i>JQuery</i>, <i>HTML5</i>, <i>CSS3</i>. 
-      I have already used to try <i>Python</i>, <i>Django</i>, and <i>AngularJS</i>. I am always happy to have new challenges and opportunities 
-      to improve my skills and learn something new. Also, aiming for code quality and customer satisfaction. If you are interested to collaborate 
-      with me, do not hesitate to get in touch!
+      Jau kuris laikas aktyviai ėmiau domėtis naujausiomis svetainių kūrimo technologijomis. Tai ir paskatino žengti rimtesnį žingsnį šioje srityje. 
+      Paskutiniu metu daugiausiai dirbau su <i>Ruby on Rails</i>, <i>Javascript</i>, <i>JQuery</i>, <i>HTML5</i>, <i>CSS3</i>. Taip pat teko išbandyti 
+      tokias technikas, kaip <i>Python</i>, <i>Django</i> bei <i>AngularJS</i>. Mėgstu iššūkius bei naujas galimybes, kurios leistų toliau tobulinti turimas 
+      žinias ir įgūdžius bei išmokti kažką naujo. Visada stegiuosi atsižvelgti į kliento poreikius bei kodo kokybę. Jei susidomėjote ir norėtumėte bendradarbiauti, 
+      užsakymų laukiu per žemiau esančią formą.
+    workplace: "Lietuvos Kompiuterininkų Sąjunga"
+    occupation: "Informacinės sistemos administratorė konferencijoje"
+    expdesc_html: |
+      Dalyvių registracijos informacinės sistemos kūrimas Oracle Application Express (APEX) aplinkoje.<br>
+      Dalyvių registravimas į kas dvejus metus vykstantį tradicinį renginį ”Kompiuterininkų dienos” (<a href="http://www.liks.lt">http://www.liks.lt</a>). 

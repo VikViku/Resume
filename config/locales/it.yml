@@ -2,6 +2,15 @@ it:
   hello_world: "Buongiorno, mondo!"
   goodbye: "Arrivederci!"
 
+  contact:
+    label:
+      name: "Nome"
+      email: "Email"
+      text: "Messaggio"
+    placeholder:
+      name: "Il vostro nome"
+      email: "Il vostro email"
+      text: "Posto per il vostro ordine e suggerimenti"
 
   flag: it
   en: "Inglese"
@@ -17,6 +26,7 @@ it:
     education: "Educazione"
     experience: "Esperienza"
     skill: "Competenze informatiche"
+    wli: "Corsi, Lingue e Interessi"
     other: "Altre informazione"
     gallery: "Galleria"
     forum: "Foro"
@@ -26,8 +36,14 @@ it:
   resume:
     title: "Freelance progettista e sviluppatore di siti web"
     desc_html: |
-      I have strong passionate about the newest web technologies that led me to dive deeper in this area. 
-      For some time I have been actively working with <i>Ruby on Rails</i>, <i>Javascript</i>, <i>JQuery</i>, <i>HTML5</i>, <i>CSS3</i>. 
-      I have already used to try <i>Python</i>, <i>Django</i>, and <i>AngularJS</i>. I am always happy to have new challenges and opportunities 
-      to improve my skills and learn something new. Also, aiming for code quality and customer satisfaction. If you are interested to collaborate 
-      with me, do not hesitate to get in touch!
+      Ho una forte passione per le più avanzate tecnologie web che mi ha ispirato a guardare più seriamente in questo settore. Per qualche tempo sto 
+      lavorando attivamente con <i>Ruby on Rails</i>, <i>Javascript</i>, <i>JQuery</i>, <i>HTML5</i>, <i>CSS3</i>. Ho già provato <i>Python</i>, <i>Django</i> 
+      e <i>AngularJS</i>. Sono sempre felice di avere nuove sfide e opportunità per migliorare le mie capacità e imparare qualcosa di nuovo. Inoltre, sto mirando 
+      alla qualità del codice e alla soddisfazione del cliente. Se sei interessato a collaborare con me, non esitate a mettersi in contatto!
+    workplace: "Società Informatica Lituana"
+    occupation: "Amministratore del sistema informativo in una conferenza"
+    expdesc_html: |
+      Sviluppatore del sistema informativo per la registrazione dei partecipanti all'evento. Applicazione web-based è stata sviluppata in Oracle Application Express (APEX).<br>
+      Receptionist per i partecipanti in un tradizionale biennale multi-evento organizzato dalla Società Informatica Lituana (<a href="http://www.liks.lt">http://www.liks.lt</a>). 
+
+

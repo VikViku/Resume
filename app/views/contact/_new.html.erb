@@ -5,9 +5,9 @@
   <div class="row">
     <div class="col-md-4 col-md-offset-4">
       <%= simple_form_for contact do |f| %>
-        <%= f.input :name, label: 'Vardas', placeholder: 'Siuntėjo vardas' %>
-        <%= f.input :email, label: 'El. paštas', placeholder: 'vardas@email.lt' %>
-        <%= f.input :text, label: 'Žinutė', placeholder: 'Tavo pasiūlymai ir užsakymai', input_html: { :style=> 'width: 70%;', :rows => 5 } %>
+        <%= f.input :name, label: t("contact.label.name"), placeholder: t("contact.placeholder.name") %>
+        <%= f.input :email, label: t("contact.label.email"), placeholder: t("contact.placeholder.email") %>
+        <%= f.input :text, label: t("contact.label.text"), placeholder: t("contact.placeholder.text"), input_html: { :style=> 'width: 70%;', :rows => 5 } %>
         <%= f.button :submit, t("navigator.contactme"), class: "btn btn-primary" %>
 
       <% end %>

@@ -34,6 +34,15 @@ en:
   goodbye: "Bye bye"
   about: "About Me"
 
+  contact:
+    label:
+      name: "Name"
+      email: "E-mail"
+      text: "Message"
+    placeholder:
+      name: "Your name"
+      email: "Your e-mail"
+      text: "Place for your order and suggestions"
 
   flag: gb
   en: "English"
@@ -50,6 +59,7 @@ en:
     education: "Education"
     experience: "Experience"
     skill: "Computer Skills"
+    wli: "Courses, Languages, and Interests"
     other: "Other information"
     gallery: "Gallery"
     forum: "Forum"
@@ -64,3 +74,16 @@ en:
       I have already used to try <i>Python</i>, <i>Django</i>, and <i>AngularJS</i>. I am always happy to have new challenges and opportunities 
       to improve my skills and learn something new. Also, aiming for code quality and customer satisfaction. If you are interested to collaborate 
       with me, do not hesitate to get in touch!
+    workplace: "Lithuanian Computer Society"
+    occupation: "System administrator at the conference"
+    expdesc_html: | 
+      Responsible for registration of participants in a traditional biennial multi-event “Computer Days” (<a href="http://www.liks.lt">http://www.liks.lt</a>).<br>
+      Developer of information system for the registration of the event participants.
+
+
+
+
+
+
+
+
