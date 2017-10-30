@@ -54,9 +54,9 @@ it:
         Programmazione web con Ruby on Rails nella academia di <b>Baltic Talents</b> a Vilnius, Lituania
     language:
       names_html: |
-        Lituano madrelingua<br>
-        Inglese B2<br>
-        italiano A2
+        Lituano: madrelingua<br>
+        Inglese: B2<br>
+        italiano: A2
     hobby:
       titles_html: |
         Fotografia digitale<br>

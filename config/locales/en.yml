@@ -88,9 +88,9 @@ en:
         Web programming with Ruby on Rails at <b>Baltic Talents</b> School in Vilnius, Lithuania
     language:
       names_html: |
-        Lithuanian - mothertongue<br>
-        English - B2<br>
-        italian - A2
+        Lithuanian: mothertongue<br>
+        English: B2<br>
+        italian: A2
     hobby:
       titles_html: |
         Digital Photography<br>
