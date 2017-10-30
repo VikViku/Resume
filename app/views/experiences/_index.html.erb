@@ -2,15 +2,15 @@
 
 <div class="container-fluid">
 	<h1><%= t("navigator.experience") %></h1>
-	<% @experiences.each do |exp| %>
-	<button data-toggle="collapse" data-target="#<%= exp.id %>"><%= t("resume.workplace") %></button>
-	<div id="<%= exp.id %>" class="collapse">
-		<!-- <h3><%= exp.occupation %></h3> -->
-		<!-- <p><%= exp.desc %></p> -->
+	<!-- <# @experiences.each do |exp| %> -->
+	<button data-toggle="collapse" data-target="#liks"><%= t("resume.workplace") %></button>
+	<div id="liks" class="collapse">
+		<!-- <h3><#= exp.occupation %></h3> -->
+		<!-- <p><#= exp.desc %></p> -->
 		<h3><%= t("resume.occupation") %></h3>
 		<p><%= t("resume.expdesc_html") %></p>
 	</div>
-	<% end %>
+	<!-- <# end %> -->
 </div>
 
 </section>

@@ -63,4 +63,14 @@ lt:
         Skaitmeninė fotografija<br>
         Kelionės<br>
         Žygiai<br>
-        Oro joga      
+        Oro joga
+
+    uni:
+      school1: "Šiuolaikinės mokyklos centras"
+      degree1: "Vidurinis išsilavinimas"
+      school2: "Vilniaus Gedimino technikos universitetas"
+      degree2: "Bakalauro studijos"
+      course2: "Inžinerinė informatika"
+      school3: "Free University of Bozen - Bolzano"
+      degree3: "Magistro studijos"
+      course3: "Duomenų analizė"      

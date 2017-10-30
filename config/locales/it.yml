@@ -64,3 +64,12 @@ it:
         Trekking<br>
         Aereo Yoga
 
+    uni:
+      school1: "Šiuolaikinės mokyklos centras"
+      degree1: "Educazione secondaria"
+      school2: "Vilniaus Gedimino technikos universitetas"
+      degree2: "Laurea triennale"
+      course2: "Ingegneria informatica"
+      school3: "Libera Università di Bolzano"
+      degree3: "Laurea magistrale"
+      course3: "Ingegneria dati e conoscenza"
