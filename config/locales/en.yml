@@ -98,14 +98,14 @@ en:
         Hiking<br>
         Aerial Yoga
     uni:
-      school1: "Šiuolaikinės mokyklos centras"
-      degree1: "Secondary education"
+      school1: "Free University of Bozen - Bolzano"
+      degree1: "Master degree"
+      course1: "Data and Knowledge Engineering"
       school2: "Vilniaus Gedimino technikos universitetas"
       degree2: "Bachelor degree"
       course2: "Informatics Engineering"
-      school3: "Free University of Bozen - Bolzano"
-      degree3: "Master degree"
-      course3: "Data and Knowledge Engineering"
+      school3: "Šiuolaikinės mokyklos centras"
+      degree3: "Secondary education"
 
 
 

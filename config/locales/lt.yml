@@ -66,11 +66,11 @@ lt:
         Oro joga
 
     uni:
-      school1: "Šiuolaikinės mokyklos centras"
-      degree1: "Vidurinis išsilavinimas"
+      school1: "Bolcano universitetas"
+      degree1: "Magistro studijos"
+      course1: "Duomenų analizė"
       school2: "Vilniaus Gedimino technikos universitetas"
       degree2: "Bakalauro studijos"
-      course2: "Inžinerinė informatika"
-      school3: "Free University of Bozen - Bolzano"
-      degree3: "Magistro studijos"
-      course3: "Duomenų analizė"      
+      course2: "Inžinerinė informatika"      
+      school3: "Šiuolaikinės mokyklos centras"
+      degree3: "Vidurinis išsilavinimas"      

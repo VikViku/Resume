@@ -65,11 +65,11 @@ it:
         Aereo Yoga
 
     uni:
-      school1: "Šiuolaikinės mokyklos centras"
-      degree1: "Educazione secondaria"
+      school1: "Libera Università di Bolzano"
+      degree1: "Laurea magistrale"
+      course1: "Ingegneria dati e conoscenza"
       school2: "Vilniaus Gedimino technikos universitetas"
       degree2: "Laurea triennale"
       course2: "Ingegneria informatica"
-      school3: "Libera Università di Bolzano"
-      degree3: "Laurea magistrale"
-      course3: "Ingegneria dati e conoscenza"
+      school3: "Šiuolaikinės mokyklos centras"
+      degree3: "Educazione secondaria"
