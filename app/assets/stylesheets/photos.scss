@@ -1,3 +1,17 @@
 // Place all the styles related to the photos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+ul#lightGallery {
+  list-style-type: none;
+}
+
+ul#lightGallery li {
+	display: inline-block;
+	float: left;
+	width: 180px;
+	min-height: 180px;
+	margin: 0 5px 0 0;
+
+}

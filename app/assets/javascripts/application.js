@@ -30,7 +30,7 @@
         )
     });
 
-$('#aniimated-thumbnials').lightGallery({
-    thumbnail:true
-}); 
- 
+
+$(document).ready(function() {
+$("#lightGallery").lightGallery(); 
+});
