@@ -1,14 +1,81 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Admin dashboard</title>
+    <title>Dashboard</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'dashboard' %>
     <%= javascript_include_tag 'dashboard' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <%= stylesheet_link_tag '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' %>
+    <%= stylesheet_link_tag '//fonts.googleapis.com/css?family=Roboto:400,700,300' %>
+    <%= stylesheet_link_tag 'light_bootstrap_dashboard/pe-icon-7-stroke' %>
+
+    <%= javascript_include_tag 'https://maps.googleapis.com/maps/api/js?sensor=false' %>
+
   </head>
 
   <body>
-    <%= yield %>
+<div class="wrapper">
+    <div class="sidebar" data-color="blue" data-image='<%= image_path('light_bootstrap_dashboard/sidebar-5.jpg') %>'>
+
+    <!--   you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple" -->
+
+
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="/admin" class="simple-text">
+                    Valdymo pultas
+                </a>
+            </div>
+
+            <ul class="nav">
+            	<li class="active"><%= link_to "Vartotojo profilis", edit_user_path(current_user)%></li>
+            </ul>
+    	</div>
+    </div>
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                    	<li><%= link_to "Labas, #{current_user.first_name}", edit_user_path(current_user) %></li>
+                        <li><%= link_to "Atsijungti", destroy_user_session_path, method: :delete %></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+
+                        <% flash.each do |name, msg| %>
+                        <div><%= msg %></div>
+                        <% end %>
+                        <br>
+
+        				<%= yield %>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container-fluid">
+
+                <p class="copyright pull-right">
+                    &copy; <%= DateTime.now.year %> <a href="http://www.webjeweler.lt">Web Jeweler Studio</a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+</div>
   </body>
 </html>

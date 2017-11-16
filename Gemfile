@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem "font-awesome-rails"
-gem 'gentelella-rails'
+
 gem 'devise'
 gem 'notifyjs_rails'
 gem 'sidekiq'
@@ -39,9 +39,10 @@ gem 'rails_admin', '~> 1.2'
 gem 'pry'
 gem 'figaro'
 gem 'yaml_db'
-
+gem 'light_bootstrap_dashboard', '~> 1.3'
 gem 'bootstrap-sass'
 gem 'bootstrap-select-rails'
+gem 'bootstrap-datepicker-rails'
 gem 'flag-icons-rails'
 gem 'twitter-typeahead-rails'
 gem 'bootstrap_colorpicker_rails'

@@ -16,12 +16,12 @@ Rails.application.routes.draw do
     
     root to: 'home#index'
     
-    mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+    # mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
     
     resources :contacts, only: [:new, :create]
     resources :users, :educations, :experiences, :languages, :skills, :workshops, :photos
     
-    # get '/admin', to: 'dashboard#index'
+    get '/admin', to: 'dashboard#index'
   end
 
 end

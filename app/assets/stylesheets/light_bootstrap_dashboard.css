@@ -1,0 +1,10 @@
+/*
+ *= require light_bootstrap_dashboard/bootstrap.min
+ *= require light_bootstrap_dashboard/animate.min
+ *= require light_bootstrap_dashboard/light-bootstrap-dashboard
+ */
+
+.card label {
+	width: 90px;
+	text-transformation: lowercase !important;
+}

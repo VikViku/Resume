@@ -1,0 +1,57 @@
+<div class="card">
+    <div class="header">
+        <h4 class="title">Redaguoti profilį</h4>
+    </div>
+    <div class="content">
+            <%= simple_form_for @user do |f| %>
+            <div class="row">
+                <div class="col-md-4">
+                    <div>
+                        <%= f.input :username, label: "Slapyvardis" %>
+                        <%= f.input :first_name, label: "Vardas" %>
+                        <%= f.input :email, disabled: true, label: "El. paštas" %>
+                        <%= f.input :birthday, as: :date, html5: true, label: "Gimtadienis" %>
+                        <%= f.input :city, label: "Miestas" %>
+                    </div>
+                </div>
+            </div>
+<hr>
+            <h4 class="title">Keisti slaptažodį</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div>
+                        <%= f.input :password, label: "Slaptažodis" %>
+                        <%= f.input :password_confirmation, label: "Pakartoti slapt." %>
+                    </div>
+                </div>
+            </div>
+<hr>
+            <h4 class="title">Redaguoti avatarą</h4>
+            <div class="row">
+                <div class="col-md-8">
+                    <div>
+                        <%= f.label "Avataras" %>
+                        <% if @user.avatar_stored? %>
+                            <%= image_tag @user.avatar.thumb('150x150#').url %>
+                            <%= f.check_box :remove_avatar %> ištrinti avatarą
+                        <% else %>
+                            <%= f.file_field :avatar %>
+                            <img src="http://placehold.it/150x150">
+                        <% end %>                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2">
+                    <div>
+                        <%= f.button :submit, value: "Išsaugoti", class: "btn btn-info btn-fill pull-left" %>
+                    </div>
+                </div>
+
+            </div>
+            <% end %>
+            <div class="clearfix"></div>
+
+    </div>
+</div>
