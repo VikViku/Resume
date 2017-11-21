@@ -43,7 +43,7 @@
 
                     <ul class="nav navbar-nav navbar-right">
                     	<li><%= link_to "Labas, #{current_user.first_name}", edit_user_path(current_user) %></li>
-                        <li><%= link_to "Atsijungti", destroy_user_session_path, method: :delete %></li>
+                        <li><%= link_to "Atsijungti", destroy_user_session_path %></li>
                     </ul>
                 </div>
             </div>

@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
 
+    get '/admin', to: 'dashboard#index'
+
     devise_for :users, path: '', path_names: { sign_in: 'prisijungti', sign_out: 'atsijungti'}
 
     get "/404", to: "errors#error_404"
@@ -21,7 +23,6 @@ Rails.application.routes.draw do
     resources :contacts, only: [:new, :create]
     resources :users, :educations, :experiences, :languages, :skills, :workshops, :photos
     
-    get '/admin', to: 'dashboard#index'
   end
 
 end
