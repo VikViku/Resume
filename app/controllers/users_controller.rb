@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   before_action :authorize_access, only: [:edit, :update]
   before_action :set_user, only: [:show, :edit, :update]
   before_action :permit_user_params, only: :update
-  layout 'dashboard'
+  layout :resolve_layout
   
   def index
     @users = User.all
@@ -50,6 +50,17 @@ class UsersController < ApplicationController
     params.require(:user).permit(:first_name, :last_name, :email, 
       :password, :password_confirmation, :username, :city, :birthday, 
       :avatar, :remove_avatar, :retained_avatar)
+  end
+
+  def resolve_layout
+    case action_name
+    when "index", "edit", "update"
+      "dashboard"
+    when "show"
+      Thredded.layout
+    else
+      "dashboard"
+    end
   end
 
 end

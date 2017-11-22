@@ -14,6 +14,12 @@ Rails.application.routes.draw do
 
     devise_for :users, path: '', path_names: { sign_in: 'prisijungti', sign_out: 'atsijungti'}
 
+  devise_scope :user do
+    get 'atsijungti' => "devise/sessions#destroy"
+  end
+
+    mount Thredded::Engine => '/forumas'
+
     get "/404", to: "errors#error_404"
     
     root to: 'home#index'

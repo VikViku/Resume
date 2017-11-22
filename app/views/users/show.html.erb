@@ -1,0 +1,19 @@
+<% if @user.avatar_stored? %>
+    <%= image_tag @user.avatar.thumb('150x150#').url %>
+<% else %>
+    <img src="http://placehold.it/150x150">
+<% end %> 
+<hr>
+    <%= @user.username %><br>
+    <%= @user.first_name %><br>
+    <%= @user.email%><br>
+    <%= @user.birthday %><br>
+    <%= @user.city %>
+<br>
+<% if current_user.admin? || current_user == @user%>
+<%= link_to 'Redaguoti profilį', edit_user_path(@user) %> <br>
+<% end %>
+<br>
+<%= Thredded::ApplicationController.render partial: 'thredded/users/posts', locals: {
+      posts: Thredded.posts_page_view(scope: @user.thredded_posts.order_newest_first.limit(5),
+                                      current_user: current_user) } %>
