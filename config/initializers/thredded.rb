@@ -29,7 +29,7 @@ Thredded.current_user_method = :"current_#{Thredded.user_class_name.demodulize.u
 
 # User avatar URL. rb-gravatar gem is used by default:
 # Thredded.avatar_url = ->(user) { Gravatar.src(user.email, 156, 'mm') }
-  Thredded.avatar_url = ->(user) { user.avatar.thumb('150x150#').url }
+  Thredded.avatar_url = ->(user) { user.avatar.url || "http://placehold.it/150x150" }
 
 # ==> Database Configuration
 # By default, thredded uses integers for record ID route constraints.
