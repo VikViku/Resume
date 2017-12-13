@@ -66,13 +66,13 @@ Thredded.messageboards_order = :last_post_at_desc
 
 # ==> Email Configuration
 # Email "From:" field will use the following
-# Thredded.email_from = 'no-reply@example.com'
+ Thredded.email_from = 'info@webjeweler.lt'
 
 # Emails going out will prefix the "Subject:" with the following string
-# Thredded.email_outgoing_prefix = '[My Forum] '
+ Thredded.email_outgoing_prefix = '[WebJeweler forumas]'
 #
 # The parent mailer for all Thredded mailers
-# Thredded.parent_mailer = 'ActionMailer::Base'
+ Thredded.parent_mailer = 'ActionMailer::Base'
 
 # ==> View Configuration
 # Set the layout for rendering the thredded views.
@@ -82,7 +82,7 @@ Thredded.layout = 'thredded/application'
 # How Thredded generates URL slugs from text.
 
 # Default:
-# Thredded.slugifier = ->(input) { input.parameterize }
+  Thredded.slugifier = ->(input) { input.parameterize }
 
 # If your forum is in a language other than English, you might want to use the babosa gem instead
 # Thredded.slugifier = ->(input) { Babosa::Identifier.new(input).normalize.transliterate(:russian).to_s }
@@ -98,10 +98,11 @@ Thredded.layout = 'thredded/application'
 # Change the HTML sanitization settings used by Thredded.
 # See the Sanitize docs for more information on the underlying library: https://github.com/rgrove/sanitize/#readme
 # E.g. to allow a custom element <custom-element>:
-# Thredded::ContentFormatter.whitelist[:elements] += %w(custom-element)
+  Thredded::ContentFormatter.whitelist[:elements] += %w('b','i')
 
 # ==> User autocompletion (Private messages and @-mentions)
-# Thredded.autocomplete_min_length = 2 lower to 1 if have 1-letter names -- increase if you want
+#  Thredded.autocomplete_min_length = 2 lower to 1 if have 1-letter names -- increase if you want
+   Thredded.autocomplete_min_length = 2
 
 # ==> Error Handling
 # By default Thredded just renders a flash alert on errors such as Topic not found, or Login required.
@@ -150,7 +151,7 @@ Thredded.layout = 'thredded/application'
 # Change how users can choose to be notified, by adding notifiers here, or removing the initializer altogether
 #
 # default:
-# Thredded.notifiers = [Thredded::EmailNotifier.new]
+  Thredded.notifiers = [Thredded::EmailNotifier.new]
 #
 # none:
 # Thredded.notifiers = []
