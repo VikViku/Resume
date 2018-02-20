@@ -43,9 +43,13 @@ lt:
       tokias technikas, kaip <i>Python</i>, <i>Django</i> bei <i>AngularJS</i>. Mėgstu iššūkius bei naujas galimybes, kurios leistų toliau tobulinti turimas 
       žinias ir įgūdžius bei išmokti kažką naujo. Visada stegiuosi atsižvelgti į kliento poreikius bei kodo kokybę. Jei susidomėjote ir norėtumėte bendradarbiauti, 
       užsakymų laukiu per žemiau esančią formą.
-    workplace: "Lietuvos kompiuterininkų sąjunga"
-    occupation: "Informacinės sistemos administratorė konferencijoje"
-    expdesc_html: |
+    workplace2: "Danske Bank DGITL"
+    occupation2: "Praktika"
+    expdesc2_html: |
+      Svetainės kūrimas MobileFirst komandai, naudojant HTML5, CSS3, Javascript technologijas. Taip pat susipažinimas su vidine infrastruktūra, Angular ir Ionic karkasais. 
+    workplace1: "Lietuvos kompiuterininkų sąjunga"
+    occupation1: "Informacinės sistemos administratorė konferencijoje"
+    expdesc1_html: |
       Dalyvių registracijos informacinės sistemos kūrimas Oracle Application Express (APEX) aplinkoje.<br>
       Dalyvių registravimas į kas dvejus metus vykstantį tradicinį renginį ”Kompiuterininkų dienos” (<a href="http://www.liks.lt">http://www.liks.lt</a>). 
     workshop:

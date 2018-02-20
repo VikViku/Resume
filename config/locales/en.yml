@@ -76,9 +76,13 @@ en:
       I have already used to try <i>Python</i>, <i>Django</i>, and <i>AngularJS</i>. I am always happy to have new challenges and opportunities 
       to improve my skills and learn something new. Also, aiming for code quality and customer satisfaction. If you are interested to collaborate 
       with me, do not hesitate to get in touch!
-    workplace: "Lithuanian Computer Society"
-    occupation: "System administrator at the conference"
-    expdesc_html: | 
+    workplace2: "Danske Bank DGITL"
+    occupation2: "Internship"
+    expdesc2_html: |
+      Development of responsive website for the DGITL MobileFirst team, using HTML5, CSS3, Javascript technologies, as well as getting acquainted with the internal infrastructure, Angular & Ionic Frameworks. 
+    workplace1: "Lithuanian Computer Society"
+    occupation1: "System administrator at the conference"
+    expdesc1_html: | 
       Responsible for registration of participants in a traditional biennial multi-event “Computer Days” (<a href="http://www.liks.lt">http://www.liks.lt</a>).<br>
       Developer of information system for the registration of the event participants.
     workshop:
