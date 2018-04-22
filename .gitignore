@@ -19,6 +19,7 @@ config/application.yml
 /spec/tmp
 *.orig
 .env
+*.lock
 rerun.txt
 pickle-email-*.html
 
