@@ -1,4 +1,5 @@
 class ContactsController < ApplicationController
+	invisible_captcha only: [:create, :update], honeypot: :subtitles
 
 
 	def new
