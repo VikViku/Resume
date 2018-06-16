@@ -9,7 +9,7 @@ class ContactsController < ApplicationController
 	def create
 		# binding.pry
 		@contact = Contact.new(msg_params)
-		if @contact.save
+		if verify_recaptcha(model: @contact) && @contact.save
 			UserMailer.contact_me(@contact).deliver
 			redirect_to root_path, :notice => "Your message is sent successfully!"
     	else
