@@ -9,7 +9,7 @@
         <%= f.input :name, label: t("contact.label.name"), placeholder: t("contact.placeholder.name") %>
         <%= f.input :email, label: t("contact.label.email"), placeholder: t("contact.placeholder.email") %>
         <%= f.input :text, label: t("contact.label.text"), placeholder: t("contact.placeholder.text"), input_html: { :style=> 'width: 70%;', :rows => 5 } %>
-        <%= recaptcha_tags %>
+        <!-- <%= recaptcha_tags %> -->
         <%= f.button :submit, t("navigator.contactme"), class: "btn btn-primary" %>
 
       <% end %>
