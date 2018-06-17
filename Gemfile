@@ -52,7 +52,7 @@ gem 'dragonfly', '~> 1.1.3'
 gem 'light_gallery_rails', git: 'https://github.com/stNicolaas/light-gallery-rails.git'
 gem 'thredded', '~> 0.13.8'
 gem 'invisible_captcha'
-gem "recaptcha", require: "recaptcha/rails"
+gem 'recaptcha', require: 'recaptcha/rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
