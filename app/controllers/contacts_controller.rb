@@ -13,7 +13,7 @@ class ContactsController < ApplicationController
 			UserMailer.contact_me(@contact).deliver
 			redirect_to root_path, :notice => "Your message is sent successfully!"
     	else
-			redirect_to :back, :notice => "Something went wrong!"
+			redirect_to root_path(anchor: 'sec_contact'), :notice => "Something went wrong!"
 		end
 	end
 
